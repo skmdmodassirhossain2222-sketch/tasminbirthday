@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1d1026">
+<title>Tasmin Birthday ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--pink:#ff8fb3;--cream:#fff4ed;--plum:#1d1026}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--plum);color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:40px 20px;position:relative;isolation:isolate;background:radial-gradient(ellipse at 50% 35%,#633052 0,#2a1734 45%,#140d1b 100%)}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid #ffb6ce30;border-radius:50%;width: min(85vw,650px);height:min(85vw,650px);z-index:-1;animation:pulse 7s ease-in-out infinite}
+.hero:after{width:min(65vw,480px);height:min(65vw,480px);animation-delay:-3s}
+@keyframes pulse{50%{transform:scale(1.08);opacity:.35}}
+.eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;color:#ffc2d5}
+h1,h2{font-family:'Playfair Display',serif;font-weight:600}
+h1{font-size:clamp(3.2rem,10vw,7rem);line-height:1.02;margin:18px 0;color:#fff0f5}
+h1 span{display:block;color:var(--pink);font-style:italic}
+.subtitle{max-width:520px;margin:0 auto 28px;color:#ead8e5;line-height:1.8}
+.btn{border:0;border-radius:99px;padding:15px 25px;background:linear-gradient(110deg,#ff8fb3,#ffc2a8);color:#351629;font-weight:700;font-size:.95rem;cursor:pointer;box-shadow:0 10px 35px #ff8fb344;transition:.2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 40px #ff8fb366}
+.heart{position:absolute;color:#ff9fbe;opacity:.65;animation:float 8s linear infinite;pointer-events:none}
+@keyframes float{from{transform:translateY(110vh) rotate(0);opacity:0}15%{opacity:.7}to{transform:translateY(-15vh) rotate(35deg);opacity:0}}
+section{padding:85px 20px;max-width:900px;margin:auto;text-align:center}
+.kicker{color:var(--pink);text-transform:uppercase;letter-spacing:.2em;font-size:.7rem}
+h2{font-size:clamp(2.1rem,6vw,3.7rem);margin:12px 0 22px}
+.note{color:#e8d9e7;line-height:1.9;max-width:680px;margin:auto;font-size:1.05rem}
+.card{margin:35px auto 0;max-width:680px;padding:clamp(25px,6vw,48px);border:1px solid #ffc1d52c;border-radius:26px;background:linear-gradient(145deg,#ffffff0d,#ffffff04);box-shadow:0 20px 70px #0003}
+.card p{line-height:1.9;color:#f3e4ec}
+.signature{font-family:'Playfair Display',serif;font-style:italic;color:var(--pink);font-size:1.5rem;margin-top:25px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+.photo{aspect-ratio:4/5;border:1px dashed #ffb6ce80;border-radius:18px;background:linear-gradient(145deg,#6b3656,#2d1b38);display:grid;place-items:center;color:#f8cddd;padding:10px;font-size:.85rem;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.cake{font-size:5rem;filter:drop-shadow(0 10px 20px #ff8fb355);margin:10px}
+footer{text-align:center;padding:40px 20px;color:#c9b2c7;font-size:.85rem}
+.reveal{display:none;margin-top:24px}.reveal.show{display:block;animation:appear .8s ease}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.answers{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.answers .btn{font-size:.88rem;padding:12px 17px}
+.feedback{color:#ffc2d5;min-height:1.5em;line-height:1.6}
+input:focus{outline:2px solid #ff8fb3}
+@media(max-width:560px){.gallery{grid-template-columns:1fr 1fr}.gallery .photo:last-child{display:none}}
+
+/* Romantic rose-petal atmosphere */
+.rose-rain{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:9999}
+.rose-petal{position:absolute;top:-12vh;opacity:0;filter:drop-shadow(0 2px 5px #ff6b9a55);animation:roseFall linear forwards;will-change:transform,opacity}
+@keyframes roseFall{
+  0%{transform:translate3d(0,-5vh,0) rotate(0deg) scale(.75);opacity:0}
+  10%{opacity:.88}
+  85%{opacity:.78}
+  100%{transform:translate3d(var(--drift),112vh,0) rotate(var(--spin)) scale(1.12);opacity:0}
+}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse at 10% 15%,#ff6f9b12,transparent 38%),radial-gradient(ellipse at 90% 80%,#d65b9a12,transparent 42%)}
+section,header,main,footer{position:relative}
+@media(prefers-reduced-motion:reduce){.rose-petal{animation:none;display:none}}
+
+
+.music-toggle{
+ position:fixed;right:18px;bottom:18px;z-index:10001;
+ border:1px solid #ffc0d6aa;border-radius:999px;
+ padding:12px 17px;background:linear-gradient(135deg,#9b315f,#552443);
+ color:#fff7fa;font:600 14px 'DM Sans',sans-serif;
+ box-shadow:0 8px 28px #0006,0 0 22px #ff8fb344;
+ display:flex;align-items:center;gap:9px;cursor:pointer;
+}
+.music-toggle:active{transform:scale(.97)}
+.music-note{display:inline-block;animation:noteFloat 2s ease-in-out infinite}
+@keyframes noteFloat{50%{transform:translateY(-3px) rotate(8deg)}}
+.music-credit{position:fixed;right:20px;bottom:66px;z-index:10000;
+ color:#ffe0ebaa;font-size:10px;text-shadow:0 1px 3px #000;pointer-events:none}
+
+
+/* Birthday sequence: countdown -> greeting -> celebrate -> unlock memories */
+body:not(.birthday-unlocked) #message,
+body:not(.birthday-unlocked) #nil-projapoti,
+body:not(.birthday-unlocked) #our-memories,
+body:not(.birthday-unlocked) #games,
+body:not(.birthday-unlocked) #birthday-games,
+body:not(.birthday-unlocked) section:not(#message):not(#nil-projapoti):not(#our-memories):not(#games):not(#birthday-games),
+body:not(.birthday-unlocked) footer{display:none!important}
+body.birthday-unlocked:not(.celebration-open) #message,
+body.birthday-unlocked:not(.celebration-open) #nil-projapoti,
+body.birthday-unlocked:not(.celebration-open) #our-memories,
+body.birthday-unlocked:not(.celebration-open) #games,
+body.birthday-unlocked:not(.celebration-open) #birthday-games,
+body.birthday-unlocked:not(.celebration-open) section:not(#message):not(#nil-projapoti):not(#our-memories):not(#games):not(#birthday-games),
+body.birthday-unlocked:not(.celebration-open) footer{display:none!important}
+#celebrateButton{display:none;margin:20px auto 0;padding:14px 24px;border:1px solid #ffd0df;border-radius:999px;background:linear-gradient(135deg,#ff8fb3,#b84e80);color:#fff;font:700 1rem 'DM Sans',sans-serif;box-shadow:0 8px 28px #ff8fb355;cursor:pointer}
+.birthday-unlocked #celebrateButton{display:inline-block;animation:appear .8s ease}
+body.celebration-open #message,
+body.celebration-open #nil-projapoti,
+body.celebration-open #our-memories,
+body.celebration-open #games,
+body.celebration-open #birthday-games,
+body.celebration-open section,
+body.celebration-open footer{display:block}
+body.celebration-open .gallery{display:grid}
+body.celebration-open .photo-gallery{display:grid}
+
+</style>
+
+<style>
+.challenge-wrap{max-width:760px;margin:0 auto;text-align:left}
+.game-card{background:linear-gradient(145deg,#39203f,#24152e);border:1px solid #ffb6ce45;border-radius:22px;padding:24px;margin:18px 0;box-shadow:0 15px 45px #0003}
+.game-card h3{font-family:'Playfair Display',serif;font-size:1.55rem;margin:0 0 10px;color:#ffd4e2}
+.game-card p{color:#ead8e5;line-height:1.7}
+.answers{display:grid;gap:10px;margin-top:16px}
+.answer{width:100%;text-align:left;border:1px solid #ffb6ce55;background:#ffffff0b;color:#fff0f5;padding:13px 16px;border-radius:13px;cursor:pointer;font:inherit;transition:.2s}
+.answer:hover{background:#ff8fb322;border-color:#ff9fbe}
+.answer.correct{background:#315b45;border-color:#72d6a0}.answer.wrong{background:#67313f;border-color:#ff8fa8}
+.feedback{min-height:25px;margin-top:12px;color:#ffc2d5;font-weight:700}
+.progress{height:7px;background:#ffffff18;border-radius:20px;overflow:hidden;margin:14px 0}
+.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#ff8fb3,#ffc2a8);transition:width .35s}
+.text-answer{width:100%;padding:13px;border:1px solid #ffb6ce66;background:#1d1026;color:white;border-radius:12px;font:inherit;margin-top:10px}
+.unlock{display:none;text-align:center;padding:25px;border:1px solid #ffb6ce66;border-radius:20px;background:#ff8fb315;margin-top:20px}
+.unlock.show{display:block;animation:appear .6s ease}
+.small-note{font-size:.85rem;color:#cdb8ca}
+</style>
+
+
+<style>
+.countdown-box{display:flex;justify-content:center;gap:12px;margin:25px auto;flex-wrap:wrap}
+.count-unit{min-width:75px;padding:14px 10px;border:1px solid #ffb6ce55;border-radius:16px;background:#ffffff0c}
+.count-unit strong{display:block;font-family:'Playfair Display',serif;font-size:2.2rem;color:#ffd0df;font-variant-numeric:tabular-nums}
+.count-unit span{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#d8bfd2}
+.midnight-message{display:none;max-width:560px;margin:20px auto;padding:20px;border:1px solid #ffb6ce66;border-radius:20px;background:#ff8fb318;line-height:1.8}
+.midnight-message.show{display:block;animation:appear .8s ease}
+</style>
+
+
+<style>
+#heroGreeting{transition:opacity .6s ease}
+.gift-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
+.gift-box{border:1px solid #ffb6ce66;border-radius:16px;background:#ffffff0b;color:#fff0f5;padding:18px 6px;font-size:2.4rem;cursor:pointer}
+.gift-box span{display:block;font-size:.75rem;margin-top:8px;color:#ffd0df}
+.gift-box:disabled{opacity:.75;cursor:default}
+#heartTap:disabled{opacity:.55}
+@media(max-width:420px){.gift-box{font-size:2rem;padding:14px 4px}}
+</style>
+
+
+<style>
+.extra-card{margin:28px auto 0;max-width:760px;padding:24px;border:1px solid #ffb6ce45;border-radius:22px;background:linear-gradient(145deg,#39203f,#24152e);text-align:left}
+.memory-line{display:grid;grid-template-columns:42px 1fr;gap:14px;text-align:left;margin:18px 0}
+.memory-icon{font-size:1.6rem}
+.memory-line p{margin:5px 0;color:#ead8e5;line-height:1.7}
+.memory-line strong{color:#ffd0df}
+.photo-hint{font-size:.82rem;color:#d8bfd2;margin-top:14px}
+.photo-slot{aspect-ratio:4/5;border:1px dashed #ffb6ce80;border-radius:18px;background:linear-gradient(145deg,#6b3656,#2d1b38);display:grid;place-items:center;padding:10px;overflow:hidden;color:#f8cddd}
+.photo-slot img{width:100%;height:100%;object-fit:cover}
+.butterfly{position:fixed;z-index:5;pointer-events:none;bottom:-50px;font-size:24px;animation:butterflyRise 12s linear infinite;opacity:.8}
+@keyframes butterflyRise{0%{transform:translateY(0) translateX(0) rotate(-15deg);opacity:0}12%{opacity:.8}50%{transform:translateY(-55vh) translateX(35px) rotate(18deg)}100%{transform:translateY(-115vh) translateX(-25px) rotate(-12deg);opacity:0}}
+@media(max-width:560px){.photo-gallery{grid-template-columns:repeat(2,1fr)!important}}
+</style>
+
+</head>
+<body>
+<div class="hero" id="top">
+  <div>
+    <div class="eyebrow">20 November 2003 · A little celebration for someone extraordinary</div>
+    <h1 id="heroGreeting">A little surprise<span>for Tasmin 💗</span></h1>
+    <p class="eyebrow">20 · 11 · 2003 — Your special day</p>
+    <p class="subtitle">20 November 2003 — the day the world got a little more beautiful. Today is all about you, Tasmin: your smile, your dreams, and all the beautiful moments still waiting for us.</p>
+    <button class="btn" id="openSurpriseButton" onclick="document.getElementById('message').scrollIntoView({behavior:'smooth'})">Open your surprise ✨</button>
+
+    <div class="kicker" style="margin-top:28px" id="countdownLabel">A surprise unlocks at 12:00 AM ✨</div>
+    <div class="countdown-box">
+      <div class="count-unit"><strong id="cdDays">00</strong><span>Days</span></div>
+      <div class="count-unit"><strong id="cdHours">00</strong><span>Hours</span></div>
+      <div class="count-unit"><strong id="cdMinutes">00</strong><span>Minutes</span></div>
+      <div class="count-unit"><strong id="cdSeconds">00</strong><span>Seconds</span></div>
+    </div>
+    <div class="midnight-message" id="midnightMessage">
+      <div style="font-size:2.5rem">🎉🎂💖</div>
+      <h2 style="font-size:2rem;margin:8px 0">Happy Birthday, Tasmin! ❤️</h2>
+      <p>Happy Birthday, my love. May your day be as beautiful, kind, and special as you are. I love you! ❤️</p>
+      <button id="celebrateButton" type="button">Celebrate with me 🎉💖</button>
+    </div>
+
+  </div>
+</div>
+
+<section id="message">
+  <div class="kicker">From my heart to yours</div>
+  <h2>To my Nil Projapoti 🦋</h2>
+  <p class="note">I hope this new year of your life brings you endless happiness, peaceful days, exciting adventures, and every little thing your heart wishes for.</p>
+  <div class="card">
+    <div class="cake">🎂</div>
+    <p>Happy Birthday, Tasmin! You make ordinary days feel special just by being you. Thank you for every smile, every laugh, and every memory. I may not have the perfect words for how much you mean to me, but I hope you always feel how special you are.</p>
+    <p>Keep shining, keep dreaming, and never forget how loved you are. Here's to more memories, more laughter, and many more birthdays together. ❤️</p>
+    <div class="signature">With all my love</div>
+  </div>
+</section>
+
+
+
+<section id="nil-projapoti">
+  <div class="kicker">A little story that belongs only to us</div>
+  <h2>My Nil Projapoti 🦋</h2>
+  <div class="card" style="text-align:left;line-height:1.9">
+    <p>আমাদের ভালোবাসার শুরুটা হয়েছিল কলেজের হোস্টেলের সেই রাতে—মেসেঞ্জারে কথা বলতে বলতে। হয়তো সেদিন বুঝিনি, একটা সাধারণ কথোপকথন একদিন আমার জীবনের এত সুন্দর একটা গল্প হয়ে উঠবে।</p>
+    <p>তোমার সঙ্গে ঝগড়া হয়, অভিমান হয়, রাগও হয়… কিন্তু দিনশেষে সব অভিমান পেরিয়ে যখন তোমাকে আবার কাছে পাই, জড়িয়ে ধরে ভালোবাসতে পারি—তখন মনে হয়, এই ভালোবাসাটাই তো আমার সবচেয়ে আপন জায়গা। ❤️</p>
+    <p>তুমি সবসময় আমার পাশে থেকেছ। ট্রেনের সময় মনে করিয়ে দেওয়া থেকে শুরু করে ডায়েট চার্ট বানানো, অ্যাসাইনমেন্ট লিখতে সাহায্য করা—ছোট-বড় কত কিছুতেই তুমি আমার পাশে থেকেছ। তোমার এই যত্নগুলো হয়তো সবসময় মুখে বলা হয় না, কিন্তু আমি মন থেকে অনুভব করি। 🤭</p>
+    <p>আমি তোমাকে অনেক অনেক ভালোবাসি। শুধু ভালো সময়ে নয়, ঝগড়া-অভিমান, হাসি-কান্না—সবকিছুর মাঝেও তোমাকেই চাই।</p>
+    <p style="font-family:'Playfair Display',serif;font-size:1.5rem;color:#ffd0df;text-align:center;margin-top:24px">“তুমি আমার নীল প্রজাপতি—আমার জীবনের সবচেয়ে সুন্দর, কোমল আর আপন অনুভূতি।” 🦋</p>
+    <p style="text-align:right;margin-top:20px">তোমারই, সবসময় ❤️</p>
+  </div>
+</section>
+
+
+<section id="our-memories">
+  <div class="kicker">Little moments, endless love</div>
+  <h2>Our Memory Lane 📸</h2>
+  <p class="note">Some moments deserve a place of their own. Add your favourite photos here and let this little gallery tell our story.</p>
+  <div class="gallery photo-gallery">
+    <div class="photo-slot"><div>📷<br><strong>Our favourite photo</strong><br><small>tasmin1.jpg</small></div></div>
+    <div class="photo-slot"><div>🦋<br><strong>My Nil Projapoti</strong><br><small>tasmin2.jpg</small></div></div>
+    <div class="photo-slot"><div>💗<br><strong>A special memory</strong><br><small>tasmin3.jpg</small></div></div>
+  </div>
+  <p class="photo-hint">To show your real photos, upload them to the GitHub repository with these exact names: tasmin1.jpg, tasmin2.jpg and tasmin3.jpg. Keep them in the same folder as this HTML file.</p>
+</section>
+
+<section id="our-story-timeline">
+  <div class="kicker">From one message to a thousand memories</div>
+  <h2>Our Little Love Story 💞</h2>
+  <div class="extra-card">
+    <div class="memory-line"><div class="memory-icon">🌙</div><div><strong>That hostel night</strong><p>Our story began with a Messenger conversation on a night at the college hostel.</p></div></div>
+    <div class="memory-line"><div class="memory-icon">🥹</div><div><strong>Every little fight and every hug</strong><p>We have our arguments and our অভিমান, but somehow we always find our way back to love.</p></div></div>
+    <div class="memory-line"><div class="memory-icon">🚆</div><div><strong>Always by my side</strong><p>From train timings to diet charts and assignments, you make even ordinary days feel cared for.</p></div></div>
+  </div>
+</section>
+
+<section id="secret-letter">
+  <div class="kicker">Only for you</div>
+  <h2>A Secret Letter 💌</h2>
+  <p class="note">There are a few words I want you to keep close to your heart.</p>
+  <button class="btn" id="letterButton" type="button">Open my secret letter 💗</button>
+  <div class="reveal" id="secretLetter">
+    <div class="card" style="text-align:left">
+      <p>প্রিয় Tasmin,</p>
+      <p>তুমি আমার জীবনের সেই মানুষ, যার সঙ্গে ছোট ছোট মুহূর্তগুলোও অনেক বড় সুখ হয়ে যায়। সবসময় হয়তো সুন্দর করে বলতে পারি না, কিন্তু তোমাকে আমি ভীষণ ভালোবাসি।</p>
+      <p>আগামী দিনগুলোতে যত পথই আসুক, আমি চাই আমরা একে অপরের পাশে থাকি—হাসিতে, অভিমানে, স্বপ্নে আর ভালোবাসায়। তোমার হাতটা ধরে আরও অনেক স্মৃতি তৈরি করতে চাই।</p>
+      <p>শুভ জন্মদিন, আমার নীল প্রজাপতি। 🦋</p>
+      <div class="signature">তোমারই ❤️</div>
+    </div>
+  </div>
+</section>
+
+<section id="future-dream">
+  <div class="kicker">A promise for tomorrow</div>
+  <h2>Our Future, One Dream at a Time ✨</h2>
+  <div class="card">
+    <div class="cake">🏡 💑 🌷</div>
+    <p>আমার স্বপ্ন—একদিন আমরা একসঙ্গে অনেক সুন্দর জায়গায় ঘুরব, ছোট ছোট আনন্দ ভাগ করে নেব, কঠিন সময়ে একে অপরের শক্তি হব, আর প্রতিদিন নতুন করে একে অপরকে বেছে নেব।</p>
+    <p>আজকের এই ভালোবাসা যেন আগামী দিনের সবচেয়ে সুন্দর গল্প হয়ে ওঠে। ❤️</p>
+  </div>
+</section>
+
+<section id="birthday-games">
+  <div class="kicker">A little fun while you wait</div>
+  <h2>Play with love, Tasmin 💗</h2>
+  <p class="note">No quizzes, no tricky questions — just two cute games made for you!</p>
+
+  <div class="game-card">
+    <h3>💖 Game 1: Catch the hearts</h3>
+    <p>Tap the button as many times as you can in 10 seconds. Let's see your score!</p>
+    <div style="text-align:center;padding:12px">
+      <div id="heartScore" style="font-size:2rem;font-weight:700;color:#ffd0df">0</div>
+      <div class="small-note" id="heartTimer">Ready?</div>
+      <button class="btn" id="heartTap" style="margin-top:14px">Tap for love 💗</button>
+      <p class="feedback" id="heartResult" aria-live="polite"></p>
+      <button class="answer" id="heartStart" style="text-align:center">Start game</button>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <h3>🎁 Game 2: Open the mystery gifts</h3>
+    <p>Choose one gift box. A little message is waiting inside each one!</p>
+    <div class="gift-grid">
+      <button class="gift-box" data-gift="You are my favourite person. Always. ❤️">🎁<span>Gift 1</span></button>
+      <button class="gift-box" data-gift="Your smile is my favourite kind of sunshine. ☀️">🎁<span>Gift 2</span></button>
+      <button class="gift-box" data-gift="One more year of you being wonderful. I’m so lucky! 💞">🎁<span>Gift 3</span></button>
+    </div>
+    <p class="feedback" id="giftMessage" aria-live="polite"></p>
+  </div>
+</section>
+
+<section>
+  <div class="kicker">One last little surprise</div>
+  <h2>Make a wish, birthday girl</h2>
+  <div class="cake">🕯️ 💗 🕯️</div>
+  <button class="btn" onclick="document.getElementById('wish').classList.toggle('show')">Tap for your wish 💌</button>
+  <div class="reveal" id="wish"><div class="card"><h2 style="font-size:2rem">My wish for you</h2><p>May you always have a reason to smile, courage to chase your dreams, and someone beside you who reminds you how wonderful you are. I hope I get to be that someone. ❤️</p></div></div>
+</section>
+<footer>Made with ❤️, just for Tasmin · 20 November</footer>
+<script>
+function checkAnswer(btn,correct){
+  const box=btn.closest('.card'); const out=box.querySelector('.feedback');
+  out.textContent=correct?'Correct! The more love you give, the more it grows. ❤️':'Not quite! Try again, birthday girl. 😉';
+}
+function checkRiddle(){
+  const v=document.getElementById('riddleAnswer').value.trim().toLowerCase();
+  document.getElementById('riddleFeedback').textContent=(v==='clock'||v==='a clock')?'That’s right! A clock. ⏰ You solved it!':'A little hint: it tells you the time. Try again! 💗';
+}
+function revealUs(message){document.getElementById('usFeedback').textContent=message;}
+function unlockFinal(){
+  const v=document.getElementById('secretCode').value.trim();
+  const ok=document.getElementById('finalUnlock');
+  if(v==='2011'){ok.classList.add('show');document.getElementById('codeFeedback').textContent='Unlocked! 💖';}
+  else{document.getElementById('codeFeedback').textContent='Not quite! Hint: 20 November = 2011. Try 2011 💕';}
+}
+for(let i=0;i<22;i++){const h=document.createElement('div');h.className='heart';h.textContent=['♥','♡','✦'][i%3];h.style.left=Math.random()*100+'%';h.style.fontSize=(12+Math.random()*22)+'px';h.style.animationDelay=(-Math.random()*9)+'s';h.style.animationDuration=(7+Math.random()*7)+'s';document.body.appendChild(h)}
+</script>
+
+
+<script>
+(function(){
+  const now = new Date();
+  const isBirthdayToday = now.getMonth() === 10 && now.getDate() === 20;
+  let target = new Date(now.getFullYear(), 10, 20, 0, 0, 0);
+  if(!isBirthdayToday && target <= now) target = new Date(now.getFullYear()+1, 10, 20, 0, 0, 0);
+  const pad = n => String(n).padStart(2,'0');
+  function revealBirthday(){
+    document.getElementById('cdDays').textContent='00';
+    document.getElementById('cdHours').textContent='00';
+    document.getElementById('cdMinutes').textContent='00';
+    document.getElementById('cdSeconds').textContent='00';
+    document.getElementById('countdownLabel').textContent='The wait is over! 🎉';
+    document.getElementById('midnightMessage').classList.add('show');
+    const greeting=document.getElementById('heroGreeting');
+    greeting.innerHTML='Happy Birthday<span>Tasmin ❤️</span>';
+    document.title='Tasmin Birthday ❤️';
+    document.body.classList.add('birthday-unlocked');
+    const celebrate=document.getElementById('celebrateButton');
+    if(celebrate && !celebrate.dataset.ready){
+      celebrate.dataset.ready='yes';
+      celebrate.addEventListener('click',()=>{
+        document.body.classList.add('celebration-open');
+        celebrate.textContent='Let’s make beautiful memories ❤️';
+        document.getElementById('message').scrollIntoView({behavior:'smooth'});
+      });
+    }
+  }
+  function tick(){
+    const current = new Date();
+    if(current >= target){ revealBirthday(); return; }
+    const d = target-current;
+    document.getElementById('cdDays').textContent=pad(Math.floor(d/86400000));
+    document.getElementById('cdHours').textContent=pad(Math.floor(d%86400000/3600000));
+    document.getElementById('cdMinutes').textContent=pad(Math.floor(d%3600000/60000));
+    document.getElementById('cdSeconds').textContent=pad(Math.floor(d%60000/1000));
+    setTimeout(tick,1000);
+  }
+  if(isBirthdayToday) revealBirthday(); else tick();
+})();
+</script>
+
+
+
+<script>
+(function(){
+  const start=document.getElementById('heartStart');
+  const tap=document.getElementById('heartTap');
+  if(start && tap){
+    let score=0, time=10, timer=null, active=false;
+    tap.disabled=true;
+    start.addEventListener('click',()=>{
+      if(active) return;
+      score=0; time=10; active=true;
+      document.getElementById('heartScore').textContent=score;
+      document.getElementById('heartTimer').textContent='10 seconds — go!';
+      document.getElementById('heartResult').textContent='';
+      tap.disabled=false; start.disabled=true;
+      timer=setInterval(()=>{
+        time--;
+        document.getElementById('heartTimer').textContent=time+' seconds left';
+        if(time<=0){
+          clearInterval(timer); active=false; tap.disabled=true; start.disabled=false;
+          document.getElementById('heartTimer').textContent='Time is up!';
+          document.getElementById('heartResult').textContent='You collected '+score+' hearts! Sending you '+score+' kisses 😘';
+        }
+      },1000);
+    });
+    tap.addEventListener('click',()=>{
+      if(!active) return;
+      score++;
+      document.getElementById('heartScore').textContent=score;
+    });
+  }
+  document.querySelectorAll('.gift-box').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.getElementById('giftMessage').textContent=btn.dataset.gift;
+      document.querySelectorAll('.gift-box').forEach(b=>b.disabled=true);
+      btn.textContent='💝';
+    });
+  });
+})();
+</script>
+
+
+<script>
+(function(){
+  const letterButton=document.getElementById('letterButton');
+  if(letterButton){
+    letterButton.addEventListener('click',()=>{
+      const letter=document.getElementById('secretLetter');
+      letter.classList.toggle('show');
+      letterButton.textContent=letter.classList.contains('show')?'Close my letter 💗':'Open my secret letter 💗';
+    });
+  }
+  function addButterfly(){
+    const b=document.createElement('div');
+    b.className='butterfly';
+    b.textContent='🦋';
+    b.style.left=(8+Math.random()*84)+'vw';
+    b.style.animationDuration=(10+Math.random()*6)+'s';
+    document.body.appendChild(b);
+    setTimeout(()=>b.remove(),17000);
+  }
+  addButterfly();
+  setInterval(addButterfly,5000);
+})();
+</script>
+
+
+<script>
+(function(){
+  const rain=document.createElement('div');
+  rain.className='rose-rain';
+  rain.setAttribute('aria-hidden','true');
+  document.body.appendChild(rain);
+  const flowers=['🌹','🌸','🌺','💗'];
+  function dropPetal(){
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const petal=document.createElement('span');
+    petal.className='rose-petal';
+    petal.textContent=flowers[Math.floor(Math.random()*flowers.length)];
+    petal.style.left=(Math.random()*100)+'vw';
+    petal.style.fontSize=(16+Math.random()*18)+'px';
+    petal.style.animationDuration=(8+Math.random()*7)+'s';
+    petal.style.setProperty('--drift',(-90+Math.random()*180)+'px');
+    petal.style.setProperty('--spin',(180+Math.random()*720)+'deg');
+    rain.appendChild(petal);
+    setTimeout(()=>petal.remove(),16000);
+  }
+  for(let i=0;i<9;i++) setTimeout(dropPetal,i*650);
+  setInterval(dropPetal,1050);
+})();
+</script>
+
+
+<div class="music-credit">Romantic piano instrumental · public-domain composition</div>
+<button class="music-toggle" id="musicToggle" type="button" aria-label="Play romantic background music">
+  <span class="music-note" id="musicIcon">♫</span>
+  <span id="musicLabel">Play our music</span>
+</button>
+<audio id="romanticMusic" preload="none" loop playsinline>
+  <source src="https://commons.wikimedia.org/wiki/Special:Redirect/file/WaltzB.46InEFlatMajor.mp3" type="audio/mpeg">
+</audio>
+<script>
+(function(){
+  const audio=document.getElementById('romanticMusic');
+  const button=document.getElementById('musicToggle');
+  const label=document.getElementById('musicLabel');
+  const icon=document.getElementById('musicIcon');
+  if(!audio||!button) return;
+  button.addEventListener('click',async()=>{
+    if(audio.paused){
+      try{
+        await audio.play();
+        label.textContent='Pause music';
+        icon.textContent='♫';
+        button.setAttribute('aria-label','Pause romantic background music');
+      }catch(e){
+        label.textContent='Tap to play again';
+      }
+    }else{
+      audio.pause();
+      label.textContent='Play our music';
+      icon.textContent='♪';
+      button.setAttribute('aria-label','Play romantic background music');
+    }
+  });
+  audio.addEventListener('ended',()=>{label.textContent='Play our music';icon.textContent='♪';});
+})();
+</script>
+
+</body>
+</html>
